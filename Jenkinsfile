@@ -13,7 +13,7 @@ pipeline {
                        }  
         stage('Publish') {
             steps {
-                 curl -v -u jenkins:123456 --upload-file pom.xml http://nexus:8081/repository/maven-releases/
+                 curl '-v -u jenkins:123456 --upload-file pom.xml http://nexus:8081/repository/maven-releases/'
                   } 
                         
         }
